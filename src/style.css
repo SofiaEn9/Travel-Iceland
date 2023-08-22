@@ -1,14 +1,79 @@
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Source Serif 4', serif; */
+/* font-family: 'Poppins', sans-serif; */
 
-h1 {
+html,
+body {
+  margin: 0px;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 60px;
 }
 
-h2 {
-  font-family: Arial, Helvetica, sans-serif;
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../media/Iceland-Hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+}
+
+header h1 {
+  color: #0f949b;
+  font-weight: 500;
+  font-size: 150px;
+  margin: 0px;
+  line-height: 1.1;
+}
+
+header h2 {
+  font-weight: 300;
+  font-size: 48px;
+  color: rgba(106, 163, 190, 0.8);
+  margin: 0px;
+}
+
+header h3 {
+  color: #6aa3be;
+  font-size: 24px;
   font-weight: 400;
-  font-size: 34px;
+  margin: 0px;
+  padding-top: 25vh;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+header a {
+  margin-top: 80px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #6aa3be;
+  background: #031226;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: rgba(106, 163, 190, 0.25) 0px 2px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transition: all 1s ease;
+}
+
+header a:hover {
+  box-shadow: rgba(106, 163, 190, 0.3) 0px 3px 8px 0px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+@media (max-width: 576px) {
+  header {
+    height: 75vh;
+  }
+
+  header h1 {
+    font-size: 72px;
+  }
+
+  header h2 {
+    font-size: 26px;
+  }
+
+  header h3 {
+    font-size: 18px;
+    padding-top: 20vh;
+  }
 }
