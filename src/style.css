@@ -180,6 +180,10 @@ footer .github-link {
     text-align: center;
   }
 
+  main h3 {
+    letter-spacing: 7px;
+  }
+
   main img {
     width: 80vw;
     align-items: center;
