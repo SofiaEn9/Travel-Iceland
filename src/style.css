@@ -8,12 +8,23 @@ body {
 
 .grid {
   display: grid;
+}
+
+.grid-2col {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-3col {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 35px 0;
 }
 
 header {
@@ -70,6 +81,32 @@ header a:hover {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+main {
+  height: 100vh;
+}
+
+main img {
+  width: 500px;
+  padding: 10px;
+}
+
+main h3 {
+  color: #6aa3be;
+  text-transform: uppercase;
+  margin: 0px;
+  letter-spacing: 10px;
+}
+
+main h2 {
+  color: #031226;
+  font-size: 28px;
+  margin: 0px;
+}
+
+main p {
+  color: #031226;
+}
+
 footer {
   background: #031226;
   padding: 30px 0px;
@@ -104,8 +141,14 @@ footer .github-link {
 }
 
 @media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
   header {
     height: 75vh;
+    width: 100vw;
   }
 
   header h1 {
@@ -119,5 +162,30 @@ footer .github-link {
   header h3 {
     font-size: 18px;
     padding-top: 20vh;
+  }
+
+  section {
+    width: auto;
+    padding: 0px;
+  }
+
+  main {
+    height: auto;
+    padding: 20px;
+    line-height: 1.7;
+  }
+
+  main img {
+    width: 80vw;
+    align-items: center;
+  }
+
+  main img.fire {
+    display: none;
+  }
+
+  footer {
+    width: auto;
+    padding-left: 20px;
   }
 }
