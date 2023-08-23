@@ -22,7 +22,7 @@ body {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 35px 0;
 }
@@ -173,6 +173,11 @@ footer .github-link {
     height: auto;
     padding: 20px;
     line-height: 1.7;
+  }
+
+  main h2,
+  h3 {
+    text-align: center;
   }
 
   main img {
