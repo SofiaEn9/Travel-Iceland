@@ -6,6 +6,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../media/Iceland-Hero.jpg");
@@ -27,7 +37,8 @@ header h1 {
 header h2 {
   font-weight: 300;
   font-size: 48px;
-  color: rgba(106, 163, 190, 0.8);
+  color: #6aa3be;
+  opacity: 0.8;
   margin: 0px;
 }
 
@@ -57,6 +68,39 @@ header a {
 header a:hover {
   box-shadow: rgba(106, 163, 190, 0.3) 0px 3px 8px 0px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+footer {
+  background: #031226;
+  padding: 30px 0px;
+}
+
+footer h4 {
+  color: #0f949b;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+footer p {
+  color: #6aa3be;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+footer a {
+  color: #6aa3be;
+  opacity: 0.8;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+footer .github-link {
+  text-decoration: underline;
 }
 
 @media (max-width: 576px) {
