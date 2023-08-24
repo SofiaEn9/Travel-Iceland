@@ -86,6 +86,7 @@ header a {
 }
 
 header a:hover {
+  background: #072142;
   box-shadow: rgba(106, 163, 190, 0.3) 0px 3px 8px 0px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
@@ -169,8 +170,6 @@ p {
 }
 
 .btn:hover {
-  /* color: #031226;
-  background-color: #4287a7; */
   background: #072142;
   box-shadow: rgba(106, 163, 190, 0.3) 0px 3px 8px 0px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
