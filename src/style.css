@@ -85,10 +85,6 @@ header a:hover {
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-main section {
-  /* height: 100vh; */
-}
-
 main img {
   width: 500px;
   padding: 10px;
@@ -147,10 +143,15 @@ p {
   margin-bottom: 0px;
 }
 
+.embed {
+  display: block;
+  width: 100%;
+}
+
 .btn {
   display: block;
-  color: #031226;
-  background: #6aa3be;
+  color: #6aa3be;
+  background: #031226;
   text-decoration: none;
   box-shadow: rgba(106, 163, 190, 0.25) 0px 2px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
@@ -158,10 +159,15 @@ p {
   text-align: center;
   line-height: 21px;
   padding: 16px;
+  transition: all 1s ease;
 }
 
 .btn:hover {
-  background-color: #4287a7;
+  /* color: #031226;
+  background-color: #4287a7; */
+  background: #072142;
+  box-shadow: rgba(106, 163, 190, 0.3) 0px 3px 8px 0px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 footer {
@@ -197,14 +203,13 @@ footer .github-link {
   text-decoration: underline;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 950px) {
   .grid {
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
 
   header {
-    /* height: 100svh; */
     width: 100vw;
   }
 
@@ -257,6 +262,11 @@ footer .github-link {
   }
 
   .card {
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    display: none;
   }
 
   footer {
