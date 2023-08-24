@@ -73,6 +73,7 @@ header h3 {
 }
 
 header a {
+  width: 150px;
   margin-top: 80px;
   display: inline-block;
   padding: 10px 20px;
@@ -269,6 +270,15 @@ footer .github-link {
     width: auto;
   }
 
+  .secondary h3 {
+    margin-top: 20px;
+  }
+
+  .secondary h2 {
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
   .card {
     margin-bottom: 20px;
   }
@@ -277,8 +287,13 @@ footer .github-link {
     display: none;
   }
 
+  .third h3 {
+    margin-top: 20px;
+  }
+
   .third h2 {
-    margin-bottom: 25px;
+    line-height: 36px;
+    margin-bottom: 20px;
   }
 
   footer {
